@@ -1,0 +1,7 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+  if request.fullpath == '/products'
+render :text => "aa"
+ end 
+end
