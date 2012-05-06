@@ -58,7 +58,7 @@
       <ul class="nav nav-tabs">
         <li>
             <a href="/">Home</a></li>
-    <li @>
+    <li>
 
         <a href="/products">
       Products</a></li>
