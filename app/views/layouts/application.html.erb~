@@ -35,11 +35,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">ひがしのてらこや。</a>
+          <a class="brand" href="/">ひがしのてらこや。</a>
           <div class="container-fluid nav-collapse">
-            <ul class="nav">
+
+            <ul class="nav pull-right">
               <!--ここにnavba-内のリンク書いたりする-->
+            <% if session[:user_id] %>
+              <li><%= link_to '記事の編集', '/articles' %></li>
+              <li><%= link_to 'ログアウト', '/logout', method: :delete %></li>
+
+            <% else %>
+              <li><%= link_to '管理者ログイン', '/login' %></li>
+              <li><%= link_to '新規管理者登録', 'users/new' %></li>
             </ul>
+            <% end %>
+
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -57,14 +67,14 @@
       </div>
       <ul class="nav nav-tabs">
         <li>
-            <a href="/">Home</a></li>
+            <a href="/">トップページ</a></li>
     <li>
 
-        <a href="/products">
-      Products</a></li>
-  <li><a href="/staff">Staff</a></li>
-  <li><a href="/links">Links</a></li>
-  <li><a href="#">Blog</a></li>
+    <a href="/products">ゲーム・作ったもの</a></li>
+  <li><a href="/staff">制作スタッフ</a></li>
+  <li><a href="/archives">過去の記事</a></li>
+  <li><a href="/links">リンク</a></li>
+  <li><a href="#">ブログ</a></li>
   
 </ul>
     <div class="container-fluid">

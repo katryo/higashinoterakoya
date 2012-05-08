@@ -5,7 +5,9 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
+
+gem 'bcrypt-ruby'
 
 
 # Gems used only for assets and not required
@@ -23,6 +25,7 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+gem 'ruby_gntp'
 end
 
 # To use ActiveModel has_secure_password

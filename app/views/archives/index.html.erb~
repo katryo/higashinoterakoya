@@ -1,0 +1,15 @@
+<h1>過去の情報アーカイブ</h1>
+<br>
+<% @articles.each do |article| %>
+  <p>
+  <div class="entry">
+    <h3>
+      <%= article.title %>
+    </h3>
+    <br>
+    <%= sanitize(article.description) %>
+  </div>
+  </p>
+  <br>
+  <% end %>
+

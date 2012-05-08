@@ -1,0 +1,24 @@
+<h1>管理者ログインのページ</h1>
+<br>
+<p>ひがしのてらこや。スタッフしか使えません。</p>
+
+<%= form_tag do %>
+  <fieldset>
+    <legend>ログインしてください。</legend>
+
+    <div>
+      <%= label_tag :name, '名前：' %>
+      <%= text_field_tag :name, params[:name] %>
+    </div>
+
+     <div>
+      <%= label_tag :password, 'パスワード：' %>
+      <%= password_field_tag :password, params[:password] %>
+    </div>
+
+
+    <div>
+      <%= submit_tag "ログイン" %>
+    </div>
+  </fieldset>
+  <% end %>

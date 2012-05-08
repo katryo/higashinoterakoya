@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  skip_before_filter :authorize, only: [:create, :update, :destroy]
   # GET /articles
   # GET /articles.json
   def index
@@ -13,12 +14,17 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+    begin
     @article = Article.find(params[:id])
-
+    rescue ActiveRecord::RecordNotFound
+      logger.error "invalid page#{params[:id]}"
+      redirect_to '/'
+    else
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @article }
     end
+  end
   end
 
   # GET /articles/new

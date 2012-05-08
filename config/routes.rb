@@ -1,6 +1,27 @@
 Higashinoterakoya::Application.routes.draw do
 
-  resources :articles
+
+  get "archives/index"
+
+  get "admin" => "admin#index"
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
+  resources :users
+
+  resources :articles do
+    get :who_written, on: :member
+  end
 
   get "links/index"
 
@@ -11,6 +32,7 @@ Higashinoterakoya::Application.routes.draw do
   resources :products
   resources :staff
   resources :links
+  resources :archives
   get "information/index"
 
 

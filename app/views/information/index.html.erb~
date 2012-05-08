@@ -10,4 +10,5 @@
     <%= sanitize(article.description) %>
   </div>
   </p>
+  <br>
   <% end %>

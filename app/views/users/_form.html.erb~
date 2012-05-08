@@ -1,0 +1,40 @@
+<div class="higashinoterakoya_form">
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <fieldset>
+    <legend>新規管理者情報の入力</legend>
+
+  <div>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :password, 'パスワード' %><br />
+    <%= f.password_field :password %>
+  </div>
+    <div>
+    <%= f.label :password_confirmation, 'パスワードの確認' %><br />
+    <%= f.password_field :password_confirmation %>
+    </div>
+    
+    <div>
+    <%= f.label :special_password, 'パスワードの確認' %><br />
+    <%= f.password_field :special_password %>
+  </div>
+ <div>
+    <%= f.submit %>
+  </div>
+  </fieldset>
+<% end %>
+</div>
