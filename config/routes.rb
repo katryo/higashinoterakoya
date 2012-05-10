@@ -1,6 +1,8 @@
 Higashinoterakoya::Application.routes.draw do
 
 
+  get "history/index"
+
   get "archives/index"
 
   get "admin" => "admin#index"
@@ -29,6 +31,7 @@ Higashinoterakoya::Application.routes.draw do
 
   get "products/index"
 
+  resources :history
   resources :products
   resources :staff
   resources :links

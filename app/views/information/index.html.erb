@@ -1,14 +1,27 @@
+<div class="page-header">
 <h1>最新情報</h1>
-<br>
-<% @articles.each do |article| %>
+</div>
+
   <p>
   <div class="entry">
     <h3>
-      <%= article.title %>
+      <%= @articles.title %>
     </h3>
     <br>
-    <%= sanitize(article.description) %>
+    <%= markdown @articles.description %>
+    <h4>
+      投稿日時：
+      <%= @articles.created_at %>
+      </h4>
   </div>
   </p>
+
+  <hr>
+  <div class="permanent">
+    <p>
+    <h3>アナテマ・フィジクス
+    </h3>
+    
+    </p>
+  </div>
   <br>
-  <% end %>

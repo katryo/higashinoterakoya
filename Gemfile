@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -19,6 +19,9 @@ end
 
 gem 'jquery-rails'
 
+# redcarpet
+gem 'redcarpet', '1.17.2'
+gem 'gollum'
 
 group :test do
   # Pretty printed test output

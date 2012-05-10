@@ -1,3 +1,4 @@
+<%= link_to '新しく記事を書く', new_article_path, :class => 'btn btn-large' %>
 <% @articles.each do |article| %>
   <tr>
     <p>
@@ -7,18 +8,20 @@
         </h2>
       
       </p>
-      <br>
+    
       <p>
-      <%= article.description %>
+      <%= markdown article.description %>
+      </p>
+      <p>
+      <%= article.created_at %>
       </p>
       <p>
       <%= link_to 'Show', article %>
       
     <%= link_to 'Edit', edit_article_path(article) %>
     <%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %>
-      </p>
+    </p>
+    <hr>
   <% end %>
 
-<br />
 
-<%= link_to 'New Article', new_article_path %>

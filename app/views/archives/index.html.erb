@@ -1,15 +1,21 @@
-<h1>過去の記事</h1>
-<br>
+<div class="page-header">
+  <h1>過去の記事</h1>
+  </div>
 <% @articles.each do |article| %>
   <p>
   <div class="entry">
     <h3>
       <%= article.title %>
     </h3>
-    <br>
-    <%= sanitize(article.description) %>
+    
+    <%= markdown article.description %>
+       <h4>
+      投稿日時：
+      <%= article.created_at %>
+      </h4>
   </div>
   </p>
-  <br>
+  <hr>
+
   <% end %>
 

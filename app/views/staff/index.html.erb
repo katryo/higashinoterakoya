@@ -1,2 +1,63 @@
-<h1>Staff#index</h1>
-<p>Find me in app/views/staff/index.html.erb</p>
+<div class="page-header">
+  <h1>制作スタッフ</h1>
+  
+</div>
+<div class="row">
+  <div class="span2">
+    <img src="https://twimg0-a.akamaihd.net/profile_images/1207493251/__.jpg" width="128" height="128">
+    
+</div>
+<div class="span6">
+  <h3>かとりょー</h3>
+  
+   <h4>
+  <br>ひがしのてらこや。代表<br>
+  シナリオライター<br>
+  スクリプター（誰かに頼みたい）<br>
+  エンジニア（このサイト作りました）<br>
+   <%= link_to '詳細プロフィールページ', '/', :target => '_blank', :class => "btn" %>
+
+
+
+</h4>
+
+</div>
+</div>
+<br>
+<p>
+こんにちはかとりょーです。<br>
+「アナテマ・フィジクス」のシナリオ書きました。このサイトをRailsで作ったりもしています。<br>
+アイコンはアナテマ・フィジクスの登場人物、橘茜さんですね。
+</p>
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 664,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('katryo').start();
+</script>
+
+<hr>
+

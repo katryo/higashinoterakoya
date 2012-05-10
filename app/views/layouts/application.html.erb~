@@ -73,6 +73,7 @@
 
     <a href="/products">ゲーム・作ったもの</a></li>
   <li><a href="/staff">制作スタッフ</a></li>
+  <li><a href="/staff">ひがしのてらこや。の歴史</a></li>
   <li><a href="/archives">過去の記事</a></li>
   <li><a href="/links">リンク</a></li>
   <li><a href="#">ブログ</a></li>
@@ -88,7 +89,7 @@
         <div class="span4">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li> 
+              <li class="nav-header"></li> 
               
               
               <!-- このタグを +1 ボタンを表示する場所に挿入してください -->
