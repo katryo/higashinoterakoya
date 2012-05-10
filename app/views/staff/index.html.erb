@@ -2,21 +2,23 @@
   <h1>制作スタッフ</h1>
   
 </div>
+
+
 <div class="row">
   <div class="span2">
     <img src="https://twimg0-a.akamaihd.net/profile_images/1207493251/__.jpg" width="128" height="128">
     
 </div>
 <div class="span6">
-  <h3>かとりょー</h3>
+  <h3>かとりょー  <%= link_to '詳細プロフィールページ', 'http://katryo.herokuapp.com/', :target => '_blank', :class => "btn" %>
+</h3>
   
    <h4>
   <br>ひがしのてらこや。代表<br>
   シナリオライター<br>
   スクリプター（誰かに頼みたい）<br>
   エンジニア（このサイト作りました）<br>
-   <%= link_to '詳細プロフィールページ', '/', :target => '_blank', :class => "btn" %>
-
+   
 
 
 </h4>
@@ -37,7 +39,7 @@ new TWTR.Widget({
   type: 'profile',
   rpp: 2,
   interval: 30000,
-  width: 664,
+  width: 600,
   height: 200,
   theme: {
     shell: {
@@ -57,6 +59,170 @@ new TWTR.Widget({
     behavior: 'all'
   }
 }).render().setUser('katryo').start();
+</script>
+
+<hr>
+
+<div class="row">
+  <div class="span2">
+    <img src="https://twimg0-a.akamaihd.net/profile_images/2009693487/clavinord.jpg" width="128" height="128">
+    
+</div>
+<div class="span6">
+  <h3>吟（clavinord）  <%= link_to '詳細プロフィールページ', '/', :target => '_blank', :class => "btn" %>
+</h3>
+  
+   <h4>
+  <br>作曲<br>
+     
+
+
+</h4>
+
+</div>
+</div>
+<br>
+<p>
+ここに吟の自己紹介が入るよ！</p>
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 600,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('clavinord').start();
+</script>
+
+<hr>
+
+<div class="row">
+  <div class="span2">
+    <img src="https://twimg0-a.akamaihd.net/profile_images/1568972856/___4.jpg" width="128" height="128">
+
+</div>
+<div class="span6">
+  <h3>市町村  <%= link_to '詳細プロフィールページ', '/', :target => '_blank', :class => "btn" %>
+</h3>
+  
+   <h4>
+  <br>キャラクターデザイナー<br>
+  原画<br>
+  ペインター<br>
+   
+
+
+</h4>
+
+</div>
+</div>
+<br>
+<p>
+市町村さん
+</p>
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 600,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('shichoson015').start();
+</script>
+
+<hr>
+
+<div class="row">
+  <div class="span2">
+    <img src="https://twimg0-a.akamaihd.net/profile_images/1017159023/iwbal_title900.png" width="128" height="128">
+    
+</div>
+<div class="span6">
+  <h3>松永闇斎（Deskull）  <%= link_to '詳細プロフィールページ', '/', :target => '_blank', :class => "btn" %>
+</h3>
+  
+   <h4>
+  <br>クリーチャーデザイナー<br>
+  原画<br>
+  ペインター<br>   
+
+
+</h4>
+
+</div>
+</div>
+<br>
+<p>
+ですかるさん
+</p>
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 2,
+  interval: 30000,
+  width: 600,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#333333',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#000000',
+      color: '#ffffff',
+      links: '#4aed05'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('deskull').start();
 </script>
 
 <hr>
