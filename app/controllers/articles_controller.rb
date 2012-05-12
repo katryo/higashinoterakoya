@@ -86,4 +86,8 @@ class ArticlesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def async_process
+    @time = Time.now.to_s
+  end
 end

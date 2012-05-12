@@ -27,7 +27,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar">
       <div class="navbar-inner">
           <div class="container-fluid">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -37,9 +37,9 @@
           </a>
           <a class="brand" href="/">ひがしのてらこや。</a>
           <div class="container-fluid nav-collapse">
-
             <ul class="nav pull-right">
-              <!--ここにnavba-内のリンク書いたりする-->
+            <!--ここにnavba-内のリンク書いたりする-->
+            <li><%= link_to '京大生がつくったゲーム制作サークル「ひがしのてらこや。」とは？', '/about_us' %></li>
             <% if session[:user_id] %>
               <li><%= link_to '記事の編集', '/articles' %></li>
               <li><%= link_to 'ログアウト', '/logout', method: :delete %></li>
@@ -58,24 +58,19 @@
 <div class="container">
       <div class="row">
         <div class="span12">
-<!-div id="viewer">
-          
-  <img src="http://farm8.staticflickr.com/7065/7001065196_9eb26150b4_b.jpg" width="528" height="219" alt="ev58a">
-<!-img src="http://farm9.staticflickr.com/8161/7141464133_b6318538e0.jpg" width="261" height="262" alt="nisehobuttonicon">
-<!-/div>
-</div>
+          <a href="http://easternretroschool.web.fc2.com/apindex.html"><img src="http://farm8.staticflickr.com/7079/7180339150_0c49ba78bb_b.jpg" width="900" height="200" alt="anathema_keyvisual2"></a></div>
       </div>
       </div>
       <ul class="nav nav-tabs">
         <li>
-        <a href="/"><i class="icon-home"></i>トップページ</a></li>
+        <a href="/">トップページ</a></li>
             <li>
-    <a href="/products"><i class="icon-off"></i>ゲーム・作ったもの</a></li>
-    <li><a href="/staff"><i class="icon-user"></i>制作スタッフ</a></li>
-  <li><a href="/history"><i class="icon-time"></i>ひがしのてらこや。の歴史</a></li>
-  <li><a href="/archives"><i class="icon-calendar"></i>過去の記事</a></li>
+    <a href="/products">ゲームとか作ったものとかこれから作るものとか</a></li>
+    <li><a href="/staff">制作スタッフ</a></li>
+  <li><a href="/history">ひがしのてらこや。の歴史</a></li>
+  <li><a href="/archives">過去の記事</a></li>
   <li><a href="/links">リンク</a></li>
-  <li><a href="#">ブログ</a></li>
+  <li><a href="http://higashinoterakoya.blogspot.jp/" target="_blank">ブログ</a></li>
   
 </ul>
     <div class="container-fluid">
@@ -138,10 +133,7 @@ new TWTR.Widget({
   }
 }).render().setUser('anathemaphysics').start();
 </script>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
-           </ul>
+                        </ul>
           </div><!--/.well -->
       </div><!--/span-->      </div><!--/row-->
 

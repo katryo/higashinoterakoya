@@ -1,5 +1,34 @@
-<h1>ゲーム・作ったもの</h1>
+<div class="page-header">
+<h1>ゲームとか作ったものとかこれから作るものとか</h1>
+</div>
+
+<h2>最新作</h2>
 <br>
+
+<div>
+  <h3>アナテマ・フィジクス    <%= link_to '詳細ページ', 'http://easternretroschool.web.fc2.com/apindex.html', :class => 'btn' %></h3>
+    <a href="http://easternretroschool.web.fc2.com/apindex.html"><img src="http://farm8.staticflickr.com/7091/7180281616_33e6113aa1.jpg" width="468" height="60" alt="anathemabanner1"></a>
+
 <p>
+<h4>目覚めたら、怪物になっていた。</h4>
+深夜の街で繰り広げられる、陸上自衛隊特殊作戦群と怪物“アナテマ”の戦闘。平凡な大学生だった主人公、土岐野蒼一が目覚めたとき、見慣れた街は戦場になっていた。
+異常な光景に
+自分がアナテマに変化していることに気づき、愕然とする。人の消えた街で、特殊作戦群とアナテマたちから逃げようとするが、すぐに発見され、殺されかかる。彼を助けたのは、見知った少女、洲原奈美だった。
+<br>
+ふたりきりで、生き残れるか。たった一日の戦争が始まる。
+
 
 </p>
+<h4>ジャンル：ノベルゲーム<br>プラットフォーム：Windows, iOS（開発中）
+</h4>
+<%= link_to 'ダウンロードページ', 'http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000140064', :target => '_blank', :class => 'btn btn-large' %>
+</div>
+
+<hr>
+
+<h2>次回作予告</h2>
+<h3>
+アナテマ・フィジクスオリジナルサウンドトラック
+<br>
+リヴァイヴァル・リスターター（仮）
+</h3>

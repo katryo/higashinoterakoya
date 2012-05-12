@@ -1,12 +1,14 @@
+
+
 <div class="page-header">
 <h1>最新情報</h1>
 </div>
 
   <p>
   <div class="entry">
-    <h3>
+    <h2>
       <%= @articles.title %>
-    </h3>
+    </h2>
     <br>
     <%= markdown @articles.description %>
     <h4>
@@ -16,11 +18,20 @@
   </div>
   </p>
 
+  <hr>
   <div class="permanent">
     <p>
     <h3>アナテマ・フィジクス
     </h3>
+<a href="http://easternretroschool.web.fc2.com/apindex.html"><img src="http://farm8.staticflickr.com/7091/7180281616_33e6113aa1.jpg" width="468" height="60" alt="anathemabanner1"></a>
+<%= link_to 'アナテマ・フィジクスのダウンロードページ', 'http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000140064', :class => 'btn btn-large', :target => '_blank' %>
     
     </p>
   </div>
+  <hr>
+  <div class="introduction">
+    <h3>ひがしのてらこや。は京大生が代表を務めるゲーム制作サークルです。
+    </h3>
+  
+    </div>
   <br>
