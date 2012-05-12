@@ -87,7 +87,4 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def async_process
-    @time = Time.now.to_s
-  end
 end

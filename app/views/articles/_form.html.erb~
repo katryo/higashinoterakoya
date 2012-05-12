@@ -19,9 +19,8 @@
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </div>
-  <div><span id="async"><%= Time.now %></span></div>
   
-    <%= link_to '確認', {:action => 'async_process'}, :remote => true %>
+    <%= link_to '更新', {:action => 'async_process'}, :remote => true %>
     
 
   <div class="actions">
