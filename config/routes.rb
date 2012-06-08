@@ -1,11 +1,8 @@
 Higashinoterakoya::Application.routes.draw do
 
 
-  get "raiko_questions/index"
-
   get "special_contents/index"
 
-  get "special_contents/raiko_question"
 
   get "about_us/index"
 
