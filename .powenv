@@ -2,7 +2,7 @@ export PATH ; PATH="/Users/katouryou/.rvm/gems/ruby-1.9.3-p125/bin:/Users/katour
 export rvm_env_string ; rvm_env_string='ruby-1.9.3-p125'
 export rvm_path ; rvm_path='/Users/katouryou/.rvm'
 export rvm_ruby_string ; rvm_ruby_string='ruby-1.9.3-p125'
-export rvm_gemset_name ; rvm_gemset_name='tdl'
+unset rvm_gemset_name
 export RUBY_VERSION ; RUBY_VERSION='ruby-1.9.3-p125'
 export GEM_HOME ; GEM_HOME='/Users/katouryou/.rvm/gems/ruby-1.9.3-p125'
 export GEM_PATH ; GEM_PATH='/Users/katouryou/.rvm/gems/ruby-1.9.3-p125:/Users/katouryou/.rvm/gems/ruby-1.9.3-p125@global'
