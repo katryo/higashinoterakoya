@@ -26,7 +26,7 @@ end
 gem 'jquery-rails'
 
 #Twitter
-gem 'twitter'
+#gem 'twitter'
 
 # redcarpet
 gem 'redcarpet', '1.17.2'
