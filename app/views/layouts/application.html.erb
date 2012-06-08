@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひがしのてらこや。</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -11,17 +10,10 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
 
-    <%= stylesheet_link_tag "application", :media => "all" %>
 
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Update your html tag to include the itemscope and itemtype attributes -->
-<html itemscope itemtype="http://schema.org/Product">
-
-<!-- Add the following three tags inside head -->
 <meta itemprop="name" content="ひがしのてらこや。">
 <meta itemprop="description" content="京大生が作った同人ノベルゲーム制作サークル「ひがしのてらこや。」">
 
@@ -43,14 +35,14 @@
 
     <div class="navbar">
       <div class="navbar-inner">
-          <div class="container-fluid">
+          <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="/">ひがしのてらこや。</a>
-          <div class="container-fluid nav-collapse">
+          <div class="container nav-collapse">
             <ul class="nav pull-right">
             <!--ここにnavba-内のリンク書いたりする-->
             <li><%= link_to '京大生がつくったゲーム制作サークル「ひがしのてらこや。」とは？', '/about_us' %></li>
@@ -69,27 +61,57 @@
         </div>
       </div>
     </div>
+    
+    
 <div class="container">
       <div class="row">
         <div class="span12">
-          <a href="http://easternretroschool.web.fc2.com/apindex.html"><img src="http://farm8.staticflickr.com/7079/7180339150_0c49ba78bb_b.jpg" width="900" height="200" alt="anathema_keyvisual2"></a></div>
-      </div>
-      </div>
-      <ul class="nav nav-tabs">
-        <li>
+          <a href="http://easternretroschool.web.fc2.com/apindex.html"><img src="http://dl.dropbox.com/u/17538030/7180339150_0c49ba78bb_b_copy.jpg" width="900" height="200" alt="anathema_keyvisual2"></a>
+          <ul class="nav nav-tabs">
+
+
+              <% if request.fullpath == '/' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
         <a href="/">トップページ</a></li>
-            <li>
+              <% if request.fullpath == '/products' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
     <a href="/products">ゲームとか作ったものとかこれから作るものとか</a></li>
-    <li><a href="/staff">制作スタッフ</a></li>
-  <li><a href="/history">ひがしのてらこや。の歴史</a></li>
-  <li><a href="/archives">過去の記事</a></li>
-  <li><a href="/links">リンク</a></li>
+              <% if request.fullpath == '/staff' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
+    <a href="/staff">制作スタッフ</a></li>
+              <% if request.fullpath == '/history' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
+  <a href="/history">ひがしのてらこや。の歴史</a></li>
+              <% if request.fullpath == '/archives' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
+ <a href="/archives">過去の記事</a></li>
+              <% if request.fullpath == '/links' %>
+                   <li class="active">
+              <% else%>
+                  <li>
+              <% end %>
+  <a href="/links">リンク</a></li>
   <li><a href="http://higashinoterakoya.blogspot.jp/" target="_blank">ブログ</a></li>
   
 </ul>
-    <div class="container-fluid">
-      <div class="row-fluid">
-      
+</div>
+  
+          
         <div class="span8">
           <%= yield %>
         </div>
@@ -130,13 +152,13 @@ new TWTR.Widget({
   height: 300,
   theme: {
     shell: {
-      background: '#333333',
+      background: '#992222',
       color: '#ffffff'
     },
     tweets: {
-      background: '#000000',
-      color: '#ffffff',
-      links: '#4aed05'
+      background: '#fdfdfd',
+      color: '#000000',
+      links: '#992222'
     }
   },
   features: {
@@ -151,6 +173,8 @@ new TWTR.Widget({
           </div><!--/.well -->
       </div><!--/span-->      </div><!--/row-->
 
+      
+    
       <footer>
         <p>&copy; ひがしのてらこや。2012</p>
       </footer>

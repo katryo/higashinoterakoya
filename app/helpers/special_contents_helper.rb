@@ -1,0 +1,2 @@
+module SpecialContentsHelper
+end

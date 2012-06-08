@@ -1,0 +1,2 @@
+module RaikoQuestionsHelper
+end
