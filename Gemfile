@@ -25,7 +25,7 @@ end
 
 gem 'jquery-rails'
 
-#Twitter
+
 #gem 'twitter'
 
 # redcarpet
