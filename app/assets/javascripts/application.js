@@ -16,6 +16,3 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-
-jQuery ->
-  $('.nav-pills li a').pjax('[data-pjax-container]')
