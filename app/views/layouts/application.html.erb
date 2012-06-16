@@ -80,26 +80,26 @@ $(document).ready(function() {
         </div>
     </div>
 
-      <a href="http://easternretroschool.web.fc2.com/apindex.html">
+      <a href="http://anathemaphysics.herokuapp.com">
     <div class="flexslider">
 <ul class="slides">
-<li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide1.jpg" />
+    <li>
+    <%= image_tag("anathemawide1.jpg")%>
 </li>
 <li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide2.png" />
+    <%= image_tag("anathemawide2.png")%>
 </li>
 <li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide4.jpg" />
+    <%= image_tag("anathemawide3.png")%>
 </li>
 <li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide5.jpg" />
+    <%= image_tag("anathemawide4.jpg")%>
 </li>
 <li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide3.png" />
+    <%= image_tag("anathemawide5.jpg")%>
 </li>
 <li>
-<img src="http://dl.dropbox.com/u/17538030/anathemawide6.jpg" />
+    <%= image_tag("anathemawide6.jpg")%>
 </li>
 <!-- 以下、画像分 -->
 </ul>
@@ -157,7 +157,9 @@ $(document).ready(function() {
   
           
 <div class="span8">
-          <%= yield %>
+    <div data-pjax-container>
+        <%= yield %>
+    </div>
         </div>
 
         <div class="span4">
