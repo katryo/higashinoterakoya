@@ -25,7 +25,7 @@ end
 
 gem 'jquery-rails'
 #gem 'pjax_rails'
-gem 'rack-pjax'
+#gem 'rack-pjax'
 
 #gem 'twitter'
 
