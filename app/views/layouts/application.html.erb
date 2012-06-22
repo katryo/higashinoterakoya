@@ -18,23 +18,20 @@
 <meta itemprop="name" content="ひがしのてらこや。">
 <meta itemprop="description" content="京大生が作った同人ノベルゲーム制作サークル「ひがしのてらこや。」">
 
-<script type="text/javascript">
-$("document").ready(function(){
-    $('.flexslider').flexslider();
-});
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+	    directionNav: false, 
+controlNav: false,
+randomize: false,
+animation: "fade"
+    }
+    
+    );
+  });
 </script>
 
-<script type='text/javascript'>
-$(document).ready(function() {
-  $('#slider').cycle({
-    fx : 'fade', /* fade, scrollLeft, scrollUp など */
-    speed : 1500, /* エフェクトのスピード */
-    timeout : 1000, /* スライドの間隔 */
-    easing : 'swing', /* easing */
-    pause : 1 /* ホバー時の一時停止 */
-  });
-});
-</script>
+
 
 <script type="text/javascript">
 
@@ -80,7 +77,7 @@ $(document).ready(function() {
         </div>
     </div>
 
-      <a href="http://anathemaphysics.herokuapp.com">
+<a href="http://anathemaphysics.herokuapp.com">
     <div class="flexslider">
 <ul class="slides">
     <li>
@@ -101,7 +98,6 @@ $(document).ready(function() {
 <li>
     <%= image_tag("https://dl.dropbox.com/u/17538030/anathemawide6.jpg")%>
 </li>
-<!-- 以下、画像分 -->
 </ul>
 </div>
 </a>
@@ -157,9 +153,7 @@ $(document).ready(function() {
   
           
 <div class="span8">
-    <div data-pjax-container>
         <%= yield %>
-    </div>
         </div>
 
         <div class="span4">
@@ -183,11 +177,14 @@ $(document).ready(function() {
 </script>
 <br>
               <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
            
 <h3>
   </h3>
-              <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+  
+  
+<script type="text/javascript" charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
   version: 2,
