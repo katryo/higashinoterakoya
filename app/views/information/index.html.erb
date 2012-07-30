@@ -10,7 +10,7 @@
       <%= @articles.title %>
     </h2>
     <br>
-    <%= markdown @articles.description %>
+    <%=  raw @markdown.render(@articles.description) %>
     <h4>
       投稿日時：
       <%= @articles.created_at %>

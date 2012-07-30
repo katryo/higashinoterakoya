@@ -8,7 +8,7 @@
       <%= article.title %>
       </h2>
     
-    <%= markdown article.description %>
+      <%= raw @markdown.render(article.description) %>
        <h4>
       投稿日時：
       <%= article.created_at %>

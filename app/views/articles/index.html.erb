@@ -10,7 +10,7 @@
       </p>
     
       <p>
-      <%= markdown article.description %>
+      <%= raw @markdown.render(article.description) %>
       </p>
       <p>
       <%= article.created_at %>

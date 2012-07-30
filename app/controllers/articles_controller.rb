@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.order("created_at DESC")
 
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }
@@ -16,6 +17,7 @@ class ArticlesController < ApplicationController
   def show
     begin
     @article = Article.find(params[:id])
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
     rescue ActiveRecord::RecordNotFound
       logger.error "invalid page#{params[:id]}"
       redirect_to '/'

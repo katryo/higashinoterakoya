@@ -29,7 +29,7 @@ gem 'jquery-rails'
 #gem 'twitter'
 
 # redcarpet
-gem 'redcarpet', '1.17.2'
+gem 'redcarpet', '2.1.1'
 gem 'gollum'
 
 group :test do
